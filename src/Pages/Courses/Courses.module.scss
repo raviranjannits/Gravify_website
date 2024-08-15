@@ -1,0 +1,72 @@
+.coursesHero {
+  min-height: calc(100vh - 4rem);
+  padding-top: 3rem;
+
+  .coursesTitle {
+    position: relative;
+    margin: 0 auto;
+
+    .arrowContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 3rem;
+
+      .dhead {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        color: var(--gdsc-grayish-1-100);
+        font-size: 2.8rem;
+        margin: 0;
+      }
+
+      .add-courses {
+        color: #fff;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: 1rem;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  .coursesCardContainer {
+    width: 85%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    .coursesCard {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coursesHero {
+    padding-top: 5vh;
+
+    .coursesTitle {
+      .arrowContainer {
+        .dhead {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .coursesCardContainer {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.semesterPage {
+  min-height: calc(100vh - 4rem);
+  padding-top: 3rem;
+
+  .arrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 3rem;
+
+    .dhead {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      color: var(--gdsc-grayish-1-100);
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    .add-sem {
+      color: #fff;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: 1rem;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .semBox {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .semesterPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .arrowContainer {
+      .dhead {
+        font-size: 2rem;
+      }
+    }
+  }
+}
